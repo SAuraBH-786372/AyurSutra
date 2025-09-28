@@ -7,9 +7,15 @@ echo "=== Starting build process ==="
 echo "Installing dependencies..."
 npm install
 
-# Run the build:static script which includes both build and export
-echo "Building and exporting static files..."
-npm run build:static
+# Build the application (next.config.js has output: 'export' which will create the out directory)
+echo "Building application..."
+npm run build
+
+# Verify the out directory was created
+if [ ! -d "out" ]; then
+  echo "Error: out directory was not created during build"
+  exit 1
+fi
 
 # List the contents of the out directory (for debugging)
 echo "Contents of out directory:"
