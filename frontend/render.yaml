@@ -1,9 +1,9 @@
 services:
   - type: web
     name: ayursutra-frontend
-    env: node
+    env: static
     plan: free
-    buildCommand: 'npm install && npm run build:static'
+    buildCommand: 'npm install && npm run build'
     staticPublishPath: './out'
     envVars:
       - key: NODE_ENV

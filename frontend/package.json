@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:static": "next build && next export -o build"
+    "build:static": "next build"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
