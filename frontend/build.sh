@@ -7,17 +7,9 @@ echo "=== Starting build process ==="
 echo "Installing dependencies..."
 npm install
 
-# Build the application
-echo "Building application..."
-npm run build
-
-# Ensure the out directory exists
-echo "Creating output directory..."
-mkdir -p out || true
-
-# Export the static files
-echo "Exporting static files..."
-npx next export -o out
+# Run the build:static script which includes both build and export
+echo "Building and exporting static files..."
+npm run build:static
 
 # List the contents of the out directory (for debugging)
 echo "Contents of out directory:"
