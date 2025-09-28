@@ -3,7 +3,7 @@ services:
     name: ayursutra-frontend
     env: static
     plan: free
-    buildCommand: 'chmod +x build.sh && ./build.sh'
+    buildCommand: 'chmod +x render-build.sh && ./render-build.sh'
     staticPublishPath: './out'
     envVars:
       - key: NODE_ENV
