@@ -1,0 +1,14 @@
+{
+  "/page": "app/page.js",
+  "/therapy-scheduler/page": "app/therapy-scheduler/page.js",
+  "/therapy-tracking/page": "app/therapy-tracking/page.js",
+  "/progress-insights/page": "app/progress-insights/page.js",
+  "/diet-lifestyle/page": "app/diet-lifestyle/page.js",
+  "/diet-plans/page": "app/diet-plans/page.js",
+  "/prakriti-analysis/page": "app/prakriti-analysis/page.js",
+  "/slots/page": "app/slots/page.js",
+  "/bookings/page": "app/bookings/page.js",
+  "/mantras/page": "app/mantras/page.js",
+  "/chat/page": "app/chat/page.js",
+  "/community/page": "app/community/page.js"
+}
